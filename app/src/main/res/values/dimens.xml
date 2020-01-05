@@ -7,6 +7,12 @@
     <dimen name="spacing_normal_16">16dp</dimen>
     <dimen name="spacing_large_24">24dp</dimen>
     <dimen name="spacing_huge_32">32dp</dimen>
+    <dimen name="spacing_maximum_72">72dp</dimen>
+
+
+    <dimen name="icon_size_24">24dp</dimen>
+    <dimen name="holder_size_72">72dp</dimen>
+    <dimen name="divider_size">1dp</dimen>
 
 
 </resources>
