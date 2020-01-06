@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
 <LinearLayout
         android:layout_width="match_parent"
@@ -39,6 +38,47 @@
 
 
         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/holder_size_72"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_small_8"
+        android:layout_marginBottom="@dimen/spacing_small_8">
+
+        <ImageView
+            style="@style/Icon.Left"
+            android:src="@drawable/ic_location_on_black_24dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="bottom"
+            android:textColorHint="@color/color_gray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/color_black"
+                android:hint="Адрес" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            style="@style/Icon.Right"
+            android:src="@drawable/ic_my_location_black_24dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size"
+        android:background="@color/color_gray_light"
+        android:layout_marginLeft="@dimen/spacing_maximum_72"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,6 +120,8 @@
             android:layout_height="@dimen/divider_size"
             android:background="@color/color_gray_light"
             android:layout_marginLeft="@dimen/spacing_maximum_72"/>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -191,6 +233,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
+                android:id="@+id/iv_open_repo"
                 style="@style/Icon.Right"
                 android:src="@drawable/ic_eye_black_24dp" />
         </LinearLayout>
