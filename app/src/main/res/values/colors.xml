@@ -6,7 +6,7 @@
 
 
 
-    <color name="color_background">#4A6572</color>
+    <color name="color_gray_dark">#4A6572</color>
     <color name="color_gray">#5d5d5d</color>
     <color name="color_gray_light">#9c9c9c</color>
     <color name="color_black">#000000</color>
