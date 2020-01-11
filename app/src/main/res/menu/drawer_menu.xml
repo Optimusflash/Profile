@@ -9,7 +9,7 @@
         <item android:id="@+id/team_menu"
             android:checkable="true"
             android:icon="@drawable/ic_people_black_24dp"
-            android:title="Команда"/>
+            android:title="Друзья"/>
     </group>
 
 </menu>

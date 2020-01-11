@@ -13,6 +13,7 @@
     <dimen name="icon_size_24">24dp</dimen>
     <dimen name="holder_size_72">72dp</dimen>
     <dimen name="divider_size">1dp</dimen>
+    <dimen name="profile_main_image_256">256dp</dimen>
 
 
 </resources>

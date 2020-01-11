@@ -19,19 +19,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.Toolbar
-                android:layout_marginTop="@dimen/spacing_large_24"
-                android:id="@+id/toolbar"
-                app:popupTheme="@style/AppTheme.PopupOverlay"
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"/>
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+                <ImageView
+                    android:id="@+id/iv_profile_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_main_image_256"
+                    android:src="@drawable/dr_strange"
+                    android:scaleType="centerCrop"/>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_marginTop="@dimen/spacing_large_24"
+                    android:id="@+id/toolbar"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"/>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,7 +57,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="80dp"
+
                     android:background="@color/color_gray_dark"
                     android:orientation="vertical"
                     android:padding="@dimen/spacing_normal_16">
@@ -54,16 +70,6 @@
                         android:text="Junior android developer"
                         android:textColor="@color/color_white"
                         android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:fontFamily="sans-serif"
-                        android:text="Дмитрий Чеботарь"
-                        android:textColor="@color/color_white"
-                        android:textSize="16sp" />
-
 
                 </LinearLayout>
 

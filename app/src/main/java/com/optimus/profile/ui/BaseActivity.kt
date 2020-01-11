@@ -16,7 +16,7 @@ import com.optimus.profile.R
  */
 abstract class BaseActivity : AppCompatActivity() {
 
-    lateinit var alertDialog: AlertDialog
+    private lateinit var alertDialog: AlertDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
